@@ -1,4 +1,4 @@
-@url = https://psychic-doodle-r74xxqxg4v25vv5-8080.app.github.dev
+@url = https://8080-giogiuseppe-apiquiz2024-l5cpr0541pc.ws-us116.gitpod.io
 
 ###
 GET {{url}}/categorias
@@ -8,5 +8,5 @@ POST {{url}}/categorias
 Content-Type: application/json
 
 {
-    "nome": "Arquitetura de APIs"
+    "nome": "Arquitetura de APIs 1"
 }
