@@ -11,7 +11,7 @@ POST {{url}}/categorias
 Content-Type: application/json
 
 {
-    "nome": "Arquitetura de APIs 3"
+    "nome": "Arquitetura de APIs 3 - Teste"
 }
 
 ###

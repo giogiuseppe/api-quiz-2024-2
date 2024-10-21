@@ -1,6 +1,5 @@
 package application.service;
 
-import java.util.NoSuchElementException;
 import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -22,6 +21,12 @@ public class CategoriaService {
     }
 
     public CategoriaDTO insert(CategoriaDTO categoria) {
+        Categoria resultado = categoriaRepo.findByNome(categoria.nome());
+        if(resultado != null) {
+            throw new ResponseStatusException(
+                HttpStatus.CONFLICT, "Categoria Já Definida"
+            );
+        }
         Categoria nova = categoriaRepo.save(new Categoria(categoria));
         return new CategoriaDTO(nova);
     }
