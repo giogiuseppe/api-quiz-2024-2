@@ -7,7 +7,21 @@ POST {{url}}/questoes
 Content-Type: application/json
 
 {
-    "enunciado": "Teste da Questão"
+    "enunciado": "Questão com Categoria Novo Tese",
+    "categoria" : {
+        "id": 8
+    }
+}
+
+###
+PUT {{url}}/questoes/4
+Content-Type: application/json
+
+{
+    "enunciado": "Questão com Categoria Novo Tese - Alterada",
+    "categoria" : {
+        "id": 4
+    }
 }
 
 ###
