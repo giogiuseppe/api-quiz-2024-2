@@ -1,0 +1,14 @@
+@url = https://psychic-doodle-r74xxqxg4v25vv5-8080.app.github.dev
+
+GET {{url}}/questoes
+
+###
+POST {{url}}/questoes
+Content-Type: application/json
+
+{
+    "enunciado": "Teste da Questão"
+}
+
+###
+DELETE {{url}}/questoes/1
