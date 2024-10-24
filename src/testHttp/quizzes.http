@@ -1,0 +1,15 @@
+@url = https://psychic-doodle-r74xxqxg4v25vv5-8080.app.github.dev
+
+GET {{url}}/quizzes
+
+###
+POST {{url}}/quizzes
+Content-Type: application/json
+
+{
+    "titulo" : "Exemplo de Quiz",
+    "questoes" : [
+        {"id" : 2},
+        {"id" : 4}
+    ]
+}
